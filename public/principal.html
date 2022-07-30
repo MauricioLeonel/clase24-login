@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<h1>Bienvenido <span id="username"></span></h1>
+	<div>porcentaje de compresion: <span id="compresion"></span></div>
+	<form action="/logout" method="POST">
+		<input type="submit" value="Logout">
+	</form>
+	<form method="POST" id="formuChat">
+		<input type="email" name="email" placeholder="email" required>
+		<input type="text" name="nombre" placeholder="nombre" required>
+		<input type="text" name="apellido" placeholder="apellido" required>
+		<input type="number" name="edad" placeholder="edad" required>
+		<input type="text" name="alias" placeholder="alias" required>
+		<input type="text" name="avatar" placeholder="avatar" required>
+		<input type="text" name="mensaje" placeholder="ingrese su mensaje">
+		<input type="submit" value="enviar">
+	</form>
+	<div id="chatContenedor" class="chatContenedor" ></div>
+
+	<script src="script/script.js"></script>
+	
+</body>
+</html>
