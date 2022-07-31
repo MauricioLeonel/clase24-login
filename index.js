@@ -38,7 +38,7 @@ app.use(session({
 	secret:'userConnect0',
 	store:
 		MongoStore.create({
-			mongoUrl:'mongodb+srv://EducationCreateMau:<PASSWORD>@cluster0.zqsar4t.mongodb.net/?retryWrites=true&w=majority',
+			mongoUrl:'mongodb+srv://EducationCreateMau:<PASSWORD>@<CLUSTER>?retryWrites=true&w=majority',
 			ttl:600
 		})
 	,
